@@ -1,3 +1,5 @@
+package org.example;
+
 import lombok.Getter;
 
 @Getter

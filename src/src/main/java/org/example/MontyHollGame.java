@@ -1,3 +1,5 @@
+package org.example;
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomUtils;
 
@@ -8,7 +10,6 @@ import java.util.List;
 import java.util.Random;
 
 @Slf4j
-
 public class MontyHollGame {
     private List<Door> doors;
     private int choice;
@@ -70,3 +71,5 @@ public class MontyHollGame {
         return doors.get(choice).getSurprize().equals("AUTO");
     }
 }
+
+

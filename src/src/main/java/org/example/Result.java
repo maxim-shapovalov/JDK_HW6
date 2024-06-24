@@ -1,3 +1,5 @@
+package org.example;
+
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;
@@ -26,9 +28,11 @@ public class Result {
             if (result.get(i + 2 * numberOfGames)) countRandom++;
         }
 
-        log.info("Количество игр: {}", numberOfGames);
-        log.info("Всегда меняет дверь: {} побед, процент: {}%", countAlwaysSwitch, (countAlwaysSwitch * 100.0 / numberOfGames));
-        log.info("Никогда не меняет дверь: {} побед, процент: {}%", countNeverSwitch, (countNeverSwitch * 100.0 / numberOfGames));
-        log.info("Рандомно меняет дверь: {} побед, процент: {}%", countRandom, (countRandom * 100.0 / numberOfGames));
+        log.info("РљРѕР»РёС‡РµСЃС‚РІРѕ РёРіСЂ: {}", numberOfGames);
+        log.info("Р’СЃРµРіРґР° РјРµРЅСЏРµС‚ РґРІРµСЂСЊ: {} РїРѕР±РµРґ, РїСЂРѕС†РµРЅС‚: {}%", countAlwaysSwitch, (countAlwaysSwitch * 100.0 / numberOfGames));
+        log.info("РќРёРєРѕРіРґР° РЅРµ РјРµРЅСЏРµС‚ РґРІРµСЂСЊ: {} РїРѕР±РµРґ, РїСЂРѕС†РµРЅС‚: {}%", countNeverSwitch, (countNeverSwitch * 100.0 / numberOfGames));
+        log.info("Р Р°РЅРґРѕРјРЅРѕ РјРµРЅСЏРµС‚ РґРІРµСЂСЊ: {} РїРѕР±РµРґ, РїСЂРѕС†РµРЅС‚: {}%", countRandom, (countRandom * 100.0 / numberOfGames));
     }
 }
+
+
